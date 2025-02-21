@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar bg-danger justify-content-end navbar-expand-lg">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="{% url 'home' %}" class="nav-link">HOME</a>
+
+
+        </li>
+        <li class="nav-item">
+            <a href="{% url 'about' %}" class="nav-link">ABOUT</a>
+
+        </li>
+        <li class="nav-item">
+            <a href="{% url 'Gallery' %}" class="nav-link">GALLERY</a>
+
+        </li>
+        <li class="nav-item">
+            <a href="{% url 'form' %}" class="nav-link">FORM</a>
+
+        </li>
+          <li class="nav-item">
+            <a href="{% url 'products' %}" class="nav-link">PRODUCTS</a>
+
+        </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">LOGIN</a>
+
+        </li>
+        <li class="nav-item">
+            <form action="" class="d-flex">
+                <input type="search" placeholder="search.." class="form-control">
+                <button class="btn btn-warning ms-3 me-5" >Search</button>
+            </form>
+
+        </li>
+
+
+
+
+
+    </ul>
+
+</nav>
+
+<h1 class="text-center mt-3 mb-3">Our Services</h1>
+<div class="row container d-flex " >
+    <div class="col-4 ">
+        <img src="{% static 'assets/design.png' %}" alt="" width="220px">
+        <h2>Design</h2>
+        <p>Deliver the best user experience with our carefully designed responsive websites and applications</p>
+        <br>
+        <button type="submit" class="text-danger btn btn-outline-danger">See portfolio*</button>
+    </div>
+    <div class="col-4 ">
+        <img src="{% static 'assets/development.png' %}" alt="" width="280px">
+        <h2>Development</h2>
+        <p>You need software that works on every device. Leverage the latest technologies and the most powerful tools!</p>
+        <br>
+        <button type="submit" class="text-danger btn btn-outline-danger">See projects*</button>
+
+
+    </div>
+    <div class="col-4 ">
+        <img src="{% static 'assets/analytics.png' %}" alt="" width="340px">
+        <h2>Analytics</h2>
+        <p>Consult our experts to set up proper goals and find the best stack for your next application!</p>
+        <br>
+        <div class="container d-flex">
+        <button type="submit" class="text-danger btn btn-outline-danger ">See testimonials*</button>
+</div>
+
+    </div>
+</div>
+
+</body>
+</html>
